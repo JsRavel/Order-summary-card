@@ -1,0 +1,155 @@
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--Pale-blue);
+    font-family: Outfit;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    justify-content: center;
+    width: 21.8em;
+    height: 35rem;
+    background-color: white;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.card__header img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+.card__header{
+    height: 32%;
+    width: 100%;
+    /* border: solid black; */
+}
+.card__title{
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    padding: 0;
+}
+.card-text {
+    color: hsla(223, 42%, 15%, 0.658);
+    margin: 0 ;
+    padding: 0 0.5em ;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-text__first{
+    padding-top: 5px;
+    padding-left: 3.4em;
+    padding-bottom: 5px;
+}
+.card-text__second{
+    margin: 0 ;
+    padding-left: 2.4em;
+    padding-bottom: 5px;
+}
+.card-text__third{
+    padding-left: 3.4em;
+    margin-bottom: 6px;
+}
+            /*** Annual Payment Plan ***/
+.pay-plan{
+    background-color: hsla(225, 100%, 94%, 0.521);
+    display: flex;
+    padding: 1.4em 0 1.4em 1.2em ;
+    box-sizing: border-box;
+    align-items: center;
+    width: 85%;
+    margin-top: 16px;
+    border-radius: 13px;
+}
+.pay-plan__price{
+    display: flex;
+    align-items: center;
+}
+.pay__list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0 8px;
+}
+.price__pay li{
+    color: hsla(223, 42%, 15%, 0.658);
+}
+.price__pay h4{
+    color: var(--dark-blue);
+}
+.pay-plan__price a{
+    color: var(--bright-blue);
+    padding-left: 3em;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1em;
+    transition: ease-in-out 0.5s;
+}
+.pay-plan a:hover{
+    color: slateblue;
+}
+.payment-button{
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 900;
+    width: 85%;
+    margin-top: 1.6em;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    box-shadow: rgba(53, 53, 53, 0.404) 0px 9px 10px,
+    rgba(53, 53, 53, 0.288) 0px 4px 8px;
+    transition: ease-in-out 0.5s;
+}
+.payment-button:hover{
+    background-color: slateblue;
+    cursor: pointer;
+}
+.cancel-button{
+    padding: 1em 0 1em 0;
+    margin: 7px ;
+    color: hsla(223, 42%, 15%, 0.575);
+    font-weight: 700;
+    transition: ease-out 0.5s;
+}
+.cancel-button:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+            /* Credits */
+.article__attribution { 
+    font-size: 11px; text-align: center; 
+    color: rgb(53, 52, 52);
+    display: flex;
+    position: absolute;
+    top: 100vh;
+    
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+  
