@@ -98,10 +98,10 @@ body{
 }
 .price__pay h4{
     color: var(--dark-blue);
+    padding-right: 3em;
 }
 .pay-plan__price a{
     color: var(--bright-blue);
-    padding-left: 3em;
     font-weight: 700;
     text-decoration: none;
     font-size: 1em;
@@ -152,4 +152,9 @@ body{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-  
+@media (min-width: 375px) {
+    .article__attribution{
+        position: absolute;
+        top: 90vh;
+    }
+}  
