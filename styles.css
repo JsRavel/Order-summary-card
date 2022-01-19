@@ -12,7 +12,7 @@
 body{
     padding: 0;
     margin: 0;
-    display:         flex;
+    /* display:         flex; */
     justify-content: center;
     align-items:     center;
     background: url(images/pattern-background-desktop.svg) no-repeat;
@@ -22,6 +22,7 @@ body{
     flex-wrap: wrap;
 }
 .card{
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     box-sizing: content-box;
@@ -92,6 +93,7 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0 8px;
+    padding-left: 0.5em;
 }
 .price__pay li{
     color: hsla(223, 42%, 15%, 0.658);
@@ -144,17 +146,9 @@ body{
 .article__attribution { 
     font-size: 11px; text-align: center; 
     color: rgb(53, 52, 52);
-    display: flex;
-    position: absolute;
-    top: 100vh;
     
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-@media (min-width: 375px) {
-    .article__attribution{
-        position: absolute;
-        top: 90vh;
-    }
-}  
+ 
