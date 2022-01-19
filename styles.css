@@ -102,14 +102,15 @@ body{
     color: var(--dark-blue);
     padding-right: 3em;
 }
-.pay-plan__price a{
+.pay-plan__price span{
     color: var(--bright-blue);
     font-weight: 700;
     text-decoration: none;
     font-size: 1em;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
-.pay-plan a:hover{
+.pay-plan span:hover{
     color: slateblue;
 }
 .payment-button{
